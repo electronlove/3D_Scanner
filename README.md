@@ -22,12 +22,13 @@ Ciclops 3D Scanner by BqLabs http://diwo.bq.com/en/tag/ciclop/ and http://www.th
   
 Default settings in FreeLSS for this board 
 
-Right Laser - 4
-Left Laser  - 0
-Steps       - 6400
-Motor En    - 1
-Motor Step  - 2
-Motor Dir   - 3
-Lighting    - 21 or 22 - The FreeLSS software is not configured for more than 1 array
+1. Right Laser - 4
+2. Left Laser  - 0
+3. Steps       - 6400
+4. Motor En    - 1
+5. Motor Step  - 2
+6. Motor Dir   - 3
+7. Lighting    - 21 or 22 - The FreeLSS software is not configured for more than 1 array and limits the max pin number to 7 *This can be changed in the HttpServer.cpp line 42*
+8. All other settings stay the same. 
 
   The TSL2591 is implemented as a systemd process that runs at boot to output digital luminosity readings to an OLED display.  Preference may be to have information displayed in FreeLSS software.  
