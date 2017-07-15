@@ -1,1 +1,19 @@
 
+To program the EEPROM 
+
+1. Edit your /boot/config.txt file
+2. Add the following paramter at the end of the file: dtparam=i2c_vc=on
+3. Reboot
+
+4. Enter into the eepromutils folder
+5. Flash the eeprom with the *.eep file: sudo ./eepflash -w -f=Name_of_your_eeprom_file.eep -t=24c32
+6. To confirm that the HAT is recognized change directories to /proc/device-tree/hat/
+6. For vendor info: Type "more vendor"
+7. For product info: Type "more product"
+8. Comment out the dtparam line
+9. Reboot
+10. Fin !
+
+Info from https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=108134
+"Howto: Raspi HAT EEPROM and device-tree"
+
