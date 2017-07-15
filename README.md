@@ -7,7 +7,7 @@ FreeLSS Atlas 3D Scanner by Uriah Liggett: http://www.freelss.org/ and https://w
 
 -and- 
 
-Ciclops 3D Scanner by BqLabs http://diwo.bq.com/en/tag/ciclop/ and http://www.thingiverse.com/thing:740357.  
+Ciclop 3D Scanner by BqLabs http://diwo.bq.com/en/tag/ciclop/ and http://www.thingiverse.com/thing:740357.  
 
   The Atlas 3D Scanner allowed one to 3D print the majority of the components to build the scanner and ran on a Raspberry Pi and an interface board to control the lasers and turntable.  The software, FreeLSS runs an HTTP server which can be accessed from any computer on your home or office network.  Images aquisition is through the fixed-foucs 5MP Raspberry Pi camera.  In contrast, the BqLabs Ciclops 3D Scanner runs on an Arduino Uno and an interface board that requires a direct connection to a PC and utilizes a Logitech USB webcam. 
   
@@ -32,3 +32,5 @@ Default settings in FreeLSS for this board
 8. All other settings stay the same. 
 
   The TSL2591 is implemented as a systemd process that runs at boot to output digital luminosity readings to an OLED display.  Preference may be to have information displayed in FreeLSS software.  
+
+LDR input: controlling output of Darlington through either LS1/LS2 or LED1/LED2 output: https://youtu.be/d3qYswq6j8c
