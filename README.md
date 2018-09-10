@@ -28,9 +28,12 @@ Default settings in FreeLSS for this board
 4. Motor En    - 1
 5. Motor Step  - 2
 6. Motor Dir   - 3
-7. Lighting    - 21 or 22 - The FreeLSS software is not configured for more than 1 array and limits the max pin number to 7 *This can be changed in the HttpServer.cpp line 42*
+7. Lighting    - 21 or 22 - The FreeLSS software is not configured for more than 1 array and limits the max pin number to 7 *This can be changed by increasing 7 to 22 in line 42 of file HttpServer.cpp (/freelss/src).  Youl will need to make clean and recompile after chagning this value*
 8. All other settings stay the same. 
+9. If you enable autostart "make startup", these setttings will not be present at boot.
 
   The TSL2591 is implemented as a systemd process that runs at boot to output digital luminosity readings to an OLED display.  Preference may be to have information displayed in FreeLSS software.  
 
 LDR input: controlling output of Darlington through either LS1/LS2 or LED1/LED2 output: https://youtu.be/d3qYswq6j8c
+
+Additional Notes: Under Raspbian Stretch, the OLED does not initialize when RST pin is set to GPIO24.  This can be changed to GPIO4 (and by using the additional header rather than the one next to SDA/SCL pinouts).
