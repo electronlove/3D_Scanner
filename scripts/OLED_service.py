@@ -21,7 +21,9 @@ from PIL import ImageFont
 
 
 # Raspberry Pi pin configuration:
-RST = 24
+# RST pin was previously 24 for older version scanner board
+
+RST = 4
 
 # Note you can change the I2C address by passing an i2c_address parameter like:
 disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3D)
