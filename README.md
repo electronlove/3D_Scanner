@@ -36,4 +36,6 @@ Default settings in FreeLSS for this board
 
 LDR input: controlling output of Darlington through either LS1/LS2 or LED1/LED2 output: https://youtu.be/d3qYswq6j8c
 
-Additional Notes: Under Raspbian Stretch, the OLED does not initialize when RST pin is set to GPIO24.  This can be changed to GPIO4 (and by using the additional header rather than the one next to SDA/SCL pinouts).
+Additional Notes: Under Raspbian STRETCH through BUSTER the OLED does not initialize when RST pin is set to GPIO24 and should use GPIO4.  For V1 scanner boards, this would correspond to the GPIO breakout for header # J1.  In the V2 Scanner boards, GPIO4 breakout has been moved to header J11 next to SDA/SCL pinout (header J12).  Voltage output at header J11 has also been changed to provide 3.3V output.  Please note changes in script files for OLED display.
+
+
