@@ -32,3 +32,4 @@ To autostart on boot:
 7. Check the status of the running service
 - sudo systemctl status OLED_service.py
 
+8. Imporant note:  OLED_service.py file should match the RST pin, which is 24 for older version scanner boards and 4 revised boards.  
