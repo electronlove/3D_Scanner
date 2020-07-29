@@ -1,6 +1,8 @@
 # 3D_Scanner
 Files and Settings for 3D scanner HAT 
 
+Note that updated version of FreeLSS is available and works under Raspian BUSTER. Updated FreeLSS version also permits use of higher pin designations (e.g. for lighting).  After installing FreeLSS, ensure that PIN settings specific to 3D scanner board are correct and that steps/rotation are correct (depending on how the baord is jumpered).  For proper scanning, the motor should rotate counter-clockwise during scanning!  
+
 This 3D Scanner is based upon two open-source 3D scanning projects: 
 
 FreeLSS Atlas 3D Scanner by Uriah Liggett: http://www.freelss.org/ and https://www.kickstarter.com/projects/1545315380/atlas-3d-the-3d-scanner-you-print-and-build-yourse/description 
