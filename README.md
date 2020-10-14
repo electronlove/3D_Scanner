@@ -6,11 +6,11 @@ Note that updated version of FreeLSS (Version 1.22) is available and works under
 
 **This 3D Scanner is based upon two open-source 3D scanning projects**: 
 
-FreeLSS Atlas 3D Scanner by Uriah Liggett: http://www.freelss.org/ and https://www.kickstarter.com/projects/1545315380/atlas-3d-the-3d-scanner-you-print-and-build-yourse/description 
+     FreeLSS Atlas 3D Scanner by Uriah Liggett: http://www.freelss.org/ and https://www.kickstarter.com/projects/1545315380/atlas-3d-the-3d-scanner-you-print-and-build-yourse/description 
 
 -and- 
 
-Ciclop 3D Scanner by BqLabs http://diwo.bq.com/en/tag/ciclop/ and http://www.thingiverse.com/thing:740357.  
+     Ciclop 3D Scanner by BqLabs http://diwo.bq.com/en/tag/ciclop/ and http://www.thingiverse.com/thing:740357.  
 
   The Atlas 3D Scanner allowed one to 3D print the majority of the components to build the scanner and ran on a Raspberry Pi and an interface board to control the lasers and turntable. The software, FreeLSS runs an HTTP server which can be accessed from any computer on your home or office network. Images acquisition is through the fixed-focus 5MP Raspberry Pi camera. In contrast, the BqLabs Ciclops 3D Scanner runs on an Arduino Uno and an interface board that requires a direct connection to a PC and utilizes a Logitech USB webcam. 
   
@@ -31,7 +31,7 @@ Ciclop 3D Scanner by BqLabs http://diwo.bq.com/en/tag/ciclop/ and http://www.thi
 4. Motor En    - 1
 5. Motor Step  - 2
 6. Motor Dir   - 3
-7. 7.	Lighting - 21 or 22 - In Older version of the FreeLSS software, max pin number was set to 7.  FreeLESS is configured for 1 LED currently.  
+7. Lighting - 21 or 22 - In Older version of the FreeLSS software, max pin number was set to 7.  FreeLESS is configured for 1 LED currently.  
 
 *Note: This can be changed by increasing 7 to 22 in line 42 of file HttpServer.cpp (/freelss/src). You will need to make clean and recompile after changing this value.  This does not need to be done in the most recent release, version 1.22
 
