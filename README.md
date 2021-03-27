@@ -47,4 +47,4 @@ Fun alternative - with a LDR input: controlling output of Darlington through eit
 
 **Additional Notes**: Under Raspbian STRETCH through BUSTER the OLED does not initialize when RST pin is set to GPIO24 and should use GPIO4. For V1 scanner boards, this would correspond to the GPIO breakout for header # J1. In the V2 Scanner boards, GPIO4 breakout has been moved to header J11 next to SDA/SCL pinout (header J12). Voltage output at header J11 has also been changed to provide 3.3V output. Please note changes in script files for OLED display.
 
-** You can now purchase PCBs for the 3D scanner HAT from OSH Park.  See https://oshpark.com/shared_projects/FvgkGJDE **
+** You can now purchase PCBs for the 3D scanner HAT from OSH Park.  See https://oshpark.com/shared_projects/FvgkGJDE ** AND BOM file
